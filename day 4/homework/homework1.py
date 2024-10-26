@@ -5,7 +5,5 @@ print((celsius * 9/5) + 32)
 
 
 
-fahrenheit = 84.2
-
-
+fahrenheit =84.2
 
