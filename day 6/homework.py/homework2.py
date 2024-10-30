@@ -244,6 +244,3 @@ num1 /= 2
 
 num1 **= 2
 print(num1)
-
-
-
