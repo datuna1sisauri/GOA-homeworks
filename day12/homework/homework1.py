@@ -1,0 +1,11 @@
+print(12 > 11 or 21 > 11)
+print(81 > 31 or 21 > 11)
+print(82 > 41 or 81 < 33)
+print(110 < 21 or 81 > 12)
+print(61 > 312 or 81 < 31)
+
+print(912 > 1000 and 92 < 31)
+print(721 == 12 and 91 <=21)
+print(152 >= 12 and 81 == 81)
+print(12 <= 42 and 44 == 44)
+print(81 == 81 and 44 > 12)
