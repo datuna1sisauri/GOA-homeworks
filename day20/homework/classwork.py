@@ -11,3 +11,5 @@ elif num1 > num and  num1 > num2:
     print(str(num1), "Is bigger")
 elif num2 > num and num2 >num1:
     print(str(num2), "Is bigger")
+else:
+    print("Those three numbers are equal")
