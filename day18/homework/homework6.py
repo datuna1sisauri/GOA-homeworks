@@ -1,7 +1,7 @@
 num = int(input("Enter number: "))
 num1 = int(input("Enter number: "))
 
-operator = input("Enter one of this operations: +, -, *, /, **, %, ")
+operator = input("Enter one of this operations: +, -, *, /, **, %,: ")
 
 if operator == "+":
     print(num, "+", num1, "=", num+num1)
