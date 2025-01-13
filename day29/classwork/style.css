@@ -1,0 +1,21 @@
+.head1{
+    color: aqua;
+        background-color: black;
+        } 
+
+.paragraph1{color: aquamarine;
+border-style: double;
+        }
+
+#p1{color: brown;
+    background-color: black;
+    }
+
+#h1{color: darkblue;
+    border-style: dotted;}
+
+p{color: beige;
+background-color: bisque;}
+
+h1{color: chocolate;
+    background-color: blueviolet;}

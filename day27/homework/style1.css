@@ -1,0 +1,9 @@
+h1, p, button{
+        color: black;
+        background-color: chocolate;
+        font-weight: 900;
+        font-size: medium;
+            }   
+button{
+        color: yellow;
+        background-color: cyan;}
