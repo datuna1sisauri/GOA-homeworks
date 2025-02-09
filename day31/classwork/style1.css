@@ -1,0 +1,14 @@
+#main-div{
+        height: 600px;
+        border-style: solid;
+        padding: 15;
+        width: 70%;
+        background-color: #ff2151;
+        }
+#div1{
+        height: 10%;
+        padding: 10px;
+        border-style: solid;
+        width: 25%;
+        background-color: #5f9112;
+        }

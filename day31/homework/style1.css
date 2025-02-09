@@ -1,0 +1,17 @@
+#main_div{
+    width: 1000px;
+    height: 1000px;
+    background-color: #5f9112;
+    border-style: solid;
+    padding: 15px;
+    margin: 10px;
+    }
+#div1{
+    color: blue;
+    width: 20%;
+    height: 15%;
+    background-color: #000000;
+    border-style: solid;
+    padding: 15px;
+    margin: 10px;
+    }

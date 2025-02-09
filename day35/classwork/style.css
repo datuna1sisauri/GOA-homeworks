@@ -1,0 +1,10 @@
+a:hover{
+    font-size: medium;
+    font-weight: 700;
+    color: #ff91da;
+}
+a:active{
+    font-size: xx-large;
+    font-weight: 900;
+    color: rgb(131, 140, 90);
+}
