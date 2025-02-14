@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Smooch+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+    font-family: "Oswald";
+    src: url();
+}
+
+header{
+    font-family: "Oswald"
+}
+
+
+@font-face 
+    {
+    font-family: "Atkinson Hyperlegible Mono";
+    src: url();
+    }
+body{
+    font-family: "Atkinson Hyperlegible Mono";
+}
