@@ -124,7 +124,9 @@ def check_answer(guest_answer):
     if current_question < len(quiz_main):
         update_question()
     else:
-        final_score()
+        total_IQ = IQ_calculator(score)
+        final_score(total_IQ)
+
 # ფუნქცია კითხვების გასანახლად
 def update_question():
     # გამოაქვს შეიკთხვა
@@ -135,9 +137,23 @@ def update_question():
     for i, choice in enumerate(quiz_main[current_question]["choices"]):
         buttons[i].config(text = choice, command =lambda c=choice: check_answer(c))
 
+# IQ-ს კალკილატორი
+def IQ_calculator(score):
+    if score <= 5:
+        total_IQ = "65-75"
+    elif 6 <= score <= 10:
+        total_IQ = "75-85"
+    elif 11 <= score <= 15:
+        total_IQ = "85-95"
+    elif 16 <= score <= 20:
+        total_IQ = "95-105"
+    else:
+        total_IQ = "105+"
+    return total_IQ
+
 # საბოლოო ქულის გამომყვანი ქულა
-def final_score():
-    messagebox.showinfo("You finished the Quiz",f"your score is {score} out of {len(quiz_main)}")
+def final_score(total_IQ):
+    messagebox.showinfo("You finished the Quiz",f"your score is {score} out of {len(quiz_main)} and your total IQ is{total_IQ}")
     home.quit()
 
 # GUI-ის შექმნა
@@ -175,5 +191,6 @@ for i in range(3):
     buttons.append(button)
 
 update_question()
+
 # გამოძახება რის გარეშედაც კოდი არ გაიშვება
 home.mainloop()
