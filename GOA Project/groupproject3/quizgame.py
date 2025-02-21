@@ -135,11 +135,10 @@ def update_question():
     for i, choice in enumerate(quiz_main[current_question]["choices"]):
         buttons[i].config(text = choice, command =lambda c=choice: check_answer(c))
 
-
 # საბოლოო ქულის გამომყვანი ქულა
 def final_score():
     messagebox.showinfo("You finished the Quiz",f"your score is {score} out of {len(quiz_main)}")
-
+    home.quit()
 
 # GUI-ის შექმნა
 home = tk.Tk()
@@ -148,14 +147,13 @@ home.geometry("550x550")
 home.resizable(width=False,height=False)
 
 # ფოტოს დამატება
-logo_image = tk.PhotoImage(file="image.png")
+logo_image = tk.PhotoImage(file="goal homework/GOA Project/groupproject3/image.png")
 
 # ფოტოს ზომის შეცვლა
 logo_image = logo_image.subsample(2,2)
 # ლოგოს განლაგება
 logo_label = tk.Label(home, image=logo_image)
 logo_label.pack(pady=10)
-
 
 current_question = 0
 score = 0
