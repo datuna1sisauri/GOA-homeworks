@@ -1,0 +1,79 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# quiz-ის კითხვები, ვარიანტები და სწორი პასუხები
+quiz_main = [
+    {
+        "question": "What is the largest planet in our solar system?",
+        "choices": ["Earth", "Mars", "Jupiter",],
+        "answer": "Jupiter"
+    },
+    {
+        "question": "which programming school is the best",
+        "choices": ["Step academy", "Goa","Novatori"],
+        "answer": "Goa"
+    },
+    {
+        "question": "when does WW2 Started",
+        "choices": ["It didn't happen at all", "1939", "1938",],
+        "answer": "1939"
+    }
+    
+    
+]
+#  ფუნქცია რომ ვნახოთ პასუხი სწორია თუ არა
+def check_answer(guest_answer):
+    global current_question,score
+    if guest_answer ==quiz_main[current_question]["answer"]:
+        score += 1
+
+    current_question +=1
+    if current_question < len(quiz_main):
+        update_question()
+    else:
+        final_score()
+# ფუნქცია კითხვების გასანახლად
+def update_question():
+    question_label.config(text=quiz_main[current_question]["question"])
+    for i, choice in enumerate(quiz_main[current_question]["choices"]):
+        buttons[i].config(text = choice, command =lambda c=choice: check_answer(c))
+
+
+# საბოლოო ქულის გამომყვანი ქულა
+def final_score():
+    messagebox.showinfo("You finished the Quiz",f"your score is {score} out of {len(quiz_main)}")
+
+
+# GUI-ის შექმნა
+home = tk.Tk()
+home.title("Quiz game")
+home.geometry("550x550")
+home.resizable(width=False,height=False)
+
+# ფოტოს დამატება
+logo_image = tk.PhotoImage(file="image.png")
+
+# ფოტოს ზომის შეცვლა
+logo_image = logo_image.subsample(2,2)
+# ლოგოს განლაგება
+logo_label = tk.Label(home, image=logo_image)
+logo_label.pack(pady=10)
+
+
+current_question = 0
+score = 0
+# ლეიბელების დამატება
+question_label=tk.Label(home,text=quiz_main[current_question]["question"])
+question_label.pack(pady=20)
+
+
+# ღილაკების დამატება 
+buttons = []
+for i in range(3):
+    button= tk.Button(home, text = "",font=("Arial",15))
+    button.pack(pady=5, fill=tk.X)
+    buttons.append(button)
+
+update_question()
+
+home.mainloop()
