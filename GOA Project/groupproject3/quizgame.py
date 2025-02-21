@@ -127,7 +127,11 @@ def check_answer(guest_answer):
         final_score()
 # ფუნქცია კითხვების გასანახლად
 def update_question():
+    # გამოაქვს შეიკთხვა
     question_label.config(text=quiz_main[current_question]["question"])
+    # გამოაქვს რიგის ნომერი
+    question_number_label.config(text=f"Question {current_question + 1} of {len(quiz_main)}")  
+    # გამოაქვს ღილაკები
     for i, choice in enumerate(quiz_main[current_question]["choices"]):
         buttons[i].config(text = choice, command =lambda c=choice: check_answer(c))
 
@@ -155,6 +159,11 @@ logo_label.pack(pady=10)
 
 current_question = 0
 score = 0
+
+#კითხვების რიგის მთვლელი 
+question_number_label = tk.Label(home, text=f"Question {current_question + 1} of {len(quiz_main)}", font=("Arial", 14))
+question_number_label.pack(pady=5)
+
 # ლეიბელების დამატება
 question_label=tk.Label(home,text=quiz_main[current_question]["question"], font=("Arial",16))
 question_label.pack(pady=20)
@@ -168,5 +177,5 @@ for i in range(3):
     buttons.append(button)
 
 update_question()
-
+# გამოძახება რის გარეშედაც კოდი არ გაიშვება
 home.mainloop()
