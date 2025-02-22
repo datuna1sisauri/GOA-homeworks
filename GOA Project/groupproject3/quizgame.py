@@ -154,7 +154,17 @@ def IQ_calculator(score):
 # საბოლოო ქულის გამომყვანი ქულა
 def final_score(total_IQ):
     messagebox.showinfo("You finished the Quiz",f"your score is {score} out of {len(quiz_main)} and your total IQ is{total_IQ}")
-    home.quit()
+    show_restart_button()
+# რესტარტ ღილაკის განლაგება
+def show_restart_button():
+    restart_button.pack(pady=20)
+# რესატარტ ღილაგის მონაცემები/setting-ები
+def restart_game():
+    global current_question, score
+    current_question = 0
+    score = 0
+    update_question()
+    restart_button.pack_forget()
 
 # GUI-ის შექმნა
 home = tk.Tk()
@@ -189,6 +199,8 @@ for i in range(3):
     button= tk.Button(home, text = "",font=("Arial",15))
     button.pack(pady=5, fill=tk.X)
     buttons.append(button)
+# რესტარტ ღილაკის დამატება
+restart_button = tk.Button(home, text="Restart", font=("Arial", 16), command=restart_game)
 
 update_question()
 
