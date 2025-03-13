@@ -1,0 +1,127 @@
+/* homework 0 */
+#parent_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.child_div{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+}
+
+/* homework1 */
+#parent_div1{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+
+}
+.child_div1{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: relative;
+    left: 200px;
+}
+/* homework 2 */
+#parent_div2{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    justify-content: space-between;
+}
+.child_div2{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: relative;
+}
+/* homework 3-4 */
+#parent_div3{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+#div_to_grow{
+    flex-grow: 1;
+    margin: 5px;
+    padding: 20px;
+    background-color:blue;
+    text-align: center;
+
+}
+
+#grown_div{
+    flex-grow: 2;
+    background-color: green;
+}
+/* homework 5 */
+.child_div{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+}
+
+/* homework5 */
+#parent_div5{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+
+}
+#child_div5{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: relative;
+    left: 200px;
+}
+.child_div5{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    bottom: 200px;
+    left: 10px;
+    position: relative;
+}
+/* homework 6*/
+
+
+
+
+
+
+
+/* homework 7 */
+#parent_div7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.child_div7{
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
