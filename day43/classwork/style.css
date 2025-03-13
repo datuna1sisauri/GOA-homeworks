@@ -1,0 +1,10 @@
+body{
+    height: 100vh;
+    background-color: grey;
+}
+.divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
