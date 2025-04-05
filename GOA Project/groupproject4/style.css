@@ -1,0 +1,196 @@
+body{
+    background-color: lightgrey;
+}
+/* ზემოთა შავი მართკუთხედის სტილი */
+#main_div{
+    display: flex;
+    width: 100%;
+    font-size: 30;
+    color: grey;
+    background-color: black;
+}
+
+/*სახელი"MyMovies"-ს სტილი  */
+#h1{
+    margin: auto;
+    transition: 0.3s;
+}
+
+/*სახელი"MyMovies"-ს ანიმაცია */
+#h1:hover{
+    transform:scale(1.1)
+}
+
+/* iframe-ის ზომა */
+iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+/* ჯავასკრიპტის შედეგად გამოსული ფანჯრის სტილი */
+#videoContainer {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ნავიგაციის სტილი */
+.nav1{
+    display: flex;
+    width: 28%;
+    height: 100%;
+    margin-top: 55px;
+    margin-left: 55px;
+    justify-content: space-between;
+}
+
+/* სხვადასხვა პეიჯების სტილი */
+.pages{
+    color: grey;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.pages:hover{
+    transform:scale(1.1)
+}
+
+/* თითოეული 10ეულის სტილი */
+.page_info {
+    display: flex;
+    gap: 2px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: large;
+    padding: 10px;
+}
+
+/* ზემოტ მყოფი ორი ტექსტის სტილი */
+.header_info{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* სტილი თითოეული ფოტოსთვის რომელიც საიტზეა */
+.series, .images,.cartoon {
+    border: solid black 2px;
+    width: 150px;
+    height: auto;
+    transition: 0.3s;
+}
+/* და თითოეულის ანიმაცია */
+.series:hover, .images:hover,.cartoon:hover {
+    transform: scale(1.1);
+}
+
+/* ტოპ 10 ტექსტის სტილი */
+.top10{
+    display: flex;
+    justify-content: center;
+}
+
+/* ტრეილერის ზომა და მდებარეობა */
+.trailer {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+.trailer iframe {
+    width: 100%;
+    height: 450px;
+}
+
+
+/* footer-ის კოდი */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

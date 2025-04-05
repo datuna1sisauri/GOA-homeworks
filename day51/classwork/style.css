@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main_div{
+    width: 550px;
+    height: 550px;
+    background-color: black;
+    
+}
+
+
+#main_div:hover{
+    animation-name: bg-and-deg-change;
+    animation-duration: 3s;
+}
+@keyframes bg-and-deg-change{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: green;
+        transform: rotate(180deg);
+    } 
+    100%{
+        background-color: blue;
+        transform: rotate(360deg);
+    }
+}

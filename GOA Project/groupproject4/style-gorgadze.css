@@ -1,0 +1,57 @@
+body{
+    color: white;
+    background-color: #111;
+    margin: 0;
+    height: 100vh;
+}
+
+/*სახელი"MyMovies"-ს სტილი  */
+#h1{
+    margin: auto;
+    transition: 0.3s;
+}
+
+/*სახელი"MyMovies"-ს ანიმაცია */
+#h1:hover{
+    transform:scale(1.1)
+}
+
+#main_div{
+    display: flex;
+    width: 100%;
+    font-size: 30;
+    color: grey;
+    background-color: black;
+}
+.pages{
+    color: grey;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.pages:hover{
+    transform:scale(1.1)
+}
+
+.nav1{
+    display: flex;
+    width: 28%;
+    height: 100%;
+    margin-top: 55px;
+    margin-left: 55px;
+    justify-content: space-between;
+}
+
+#div1{
+    border: solid white 2px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    padding: 15px;
+}
+.text{
+    font-size: large;
+}

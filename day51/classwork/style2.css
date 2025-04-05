@@ -1,0 +1,9 @@
+#main_div{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    transition: 0.3s;
+}
+#main_div:hover{
+    background-color: red;
+}
