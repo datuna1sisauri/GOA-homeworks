@@ -1,0 +1,96 @@
+/* homework1 */
+#div1{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* homework2 */
+#div2{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+/* homework3 */
+#div3{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+/* homework4 */
+#div4{
+    border: black 4px solid;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+/* homework5 */
+#div5{
+    font-size: 100;
+    border: black 3px solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* homework6 */
+#footer1{
+    border: black 4px solid;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+/* homework7 */
+#div6{
+    margin: auto;
+    border: black 2px solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.div_child{
+    border: black 2px solid;
+    width: 20%;
+    height: 50px;
+}
+/* homework8 */
+#div7{
+    border: black 4px solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+#img{
+    margin: 10px;
+    background-color: lightblue;
+}
+/* homework9 */
+#div8{
+    margin:auto;
+    padding: 15px;
+    border: black 3px solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.child_div{
+    border: black 2px solid;
+    width: 60px;
+    height: 60px;
+}
