@@ -1,0 +1,201 @@
+/* homework1 */
+#header1{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+#article1{
+    border: black 3px solid;
+    width: 60%;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+}
+#aside1{
+    border: black 3px solid;
+    width: 20%;
+    height: 400px;
+    padding: 10px;
+    background-color: bisque;
+}
+#nav1{
+    border: black 3px solid;
+    width: 20%;
+    height: 400px;
+    padding: 10px;
+    background-color: lightseagreen
+}
+
+#div_main{
+    display: flex;
+    width: 100%;
+}
+#footer1{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+/* homework2 */
+#header2{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: orange;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+#div_main2{
+    display: flex;
+    width: 100%;
+}
+
+#left_sidebar{
+    border: black 3px solid;
+    width: 30%;
+    height: 400px;
+    padding: 10px;
+    background-color:  blue;
+}
+#main_content{
+    border: black 3px solid;
+    width: 40%;
+    height: 400px;
+    padding: 10px;
+    background-color:  purple;
+}
+#right_sidebar{
+    border: black 3px solid;
+    width: 30%;
+    height: 400px;
+    padding: 10px;
+    background-color:  green;
+}
+
+#footer2{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: pink;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+/* homework3 */
+#header3{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: blue;
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: start;
+    align-items: center;
+}
+#div_main3{
+    display: flex;
+    flex-direction: column;
+}
+#hero{
+    color: white;
+    border: black 1px solid;
+    width: 40%;
+    height: 100px;
+    margin-top: 5px;
+    background-color:  red;
+}
+#content{
+    color: white;
+    border: black 1px solid;
+    width: 40%;
+    height: 100px;
+    margin-top: 15px;
+    background-color:  green;
+}
+#sidebar{
+    color: white;
+    border: black 1px solid;
+    width: 40%;
+    height: 100px;
+    margin-top: 15px;
+    background-color:  purple;
+}
+#footer3{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: gray;
+    display: flex;
+    margin-top: 5px;
+    justify-content: start;
+    align-items: center;
+}
+/* homework4 */
+#div_main3{
+    display: flex;
+    flex-direction: column;
+}
+#header4{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#hero2{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: red;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#content4{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: green;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#sidebar4{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: purple;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#footer4{
+    border: black 1px solid;
+    color: white;
+    width: 40%;
+    height: 25px;
+    background-color: gray;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+

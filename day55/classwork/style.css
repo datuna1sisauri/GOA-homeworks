@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: black 2px solid;
+    background-color: green;
+
+    animation: animation1 5s linear 0s infinite ;
+}
+
+@keyframes animation1{
+    from {
+        transform: translate(200px);
+    }
+    
+    to {
+        transform: translate(100px);
+    }
+}

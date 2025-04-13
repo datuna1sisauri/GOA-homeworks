@@ -1,0 +1,91 @@
+/* homework*/
+.inputs{
+    border: black 2px solid;
+    padding: 5px;
+    background-color: blue;
+}
+/* homework1 */
+#sumbit_button{
+    color: #dac444;
+    border: black 3px solid;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+#sumbit_button:hover{
+    transform: scale(1.1);
+}
+/* homework2 */
+#text_input:focus{
+    border: #afa909 3px solid;
+    background-color: aqua;
+}
+/* homework3 */
+.error_massage{
+    color: red;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+/* homework4 */
+#div_homework4{
+    border: gray 4px solid;
+    padding: 15px;
+}
+/* homework5 */
+#div_homework5{
+    border: black 2px solid;
+    padding: 17px 30px 20px 15px;
+}
+/* homework6 */
+
+#div_homework6{
+    width: 700px;
+    border: black 2px solid;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* homework7 */
+#div_homework7{
+    border: black 2px solid;
+    border-radius: 10px;
+}
+/* homework8 */
+#div_homework8{
+    border: black 5px solid;
+}
+.margins{
+    margin: 15px;
+}
+/* homework9 */
+#button_homework9{
+    width: 200px;
+    border: red 5px solid;
+    padding: 15px;
+}
+/* homework10 */
+#div_homework10{
+    width: 50px;
+    height: 50px;
+    border: brown 5px solid;
+    box-shadow: 5px 4px 3px red;
+}
+/* homework11 */
+#ul_homework11{
+    border: black 2px solid;
+}
+
+.li_homework11{
+    margin: 15px;
+}
+/* homework12 */
+#div_homework12{
+    border: black 6px solid;
+}
+#p_homework12{
+    margin: -20px;
+}
+
