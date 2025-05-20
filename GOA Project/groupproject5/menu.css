@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: silver;
+    margin: 0;
+    padding: 20px;
+}
+
+/* input style */
+input{
+    padding: 10px;
+    width: 300px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* მთავარი სათაურისთვის */
+h2{
+    text-align: center;
+    color: #6A0DAD;
+}
+
+/* ქვესათაურისთვის */
+h1 {
+    text-align: center;
+    color: #6A0DAD;
+}
+
+/* რესპონსიული განლაგებისთვის */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /*ელემენტებს შორის დაშორება */
+}
+
+/* თითოეული კერძის ბლოკისთვის*/
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0);
+    width: 200px;
+    text-align: center;
+    color: #6A0DAD;
+}
+
+/* სურათისთვის */
+.item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* კერძის სახელწოდებისთვის */
+.item h3 {
+    margin: 10px 0 5px;
+}
+
+/* ფასისთვის */
+.item p {
+    margin: 5px 0;
+    color: gray;
+}
+
+/* შეკვეთის ღილაკისთვის */
+.order-btn {
+    background-color: #6A0DAD;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.order-btn:hover {
+    background-color: hsl(275, 95%, 22%);
+}

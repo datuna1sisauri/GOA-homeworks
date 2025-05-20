@@ -1,0 +1,229 @@
+<html>
+<head>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+        <h1>შეარჩიე მენიუდან და შეუკვეთე ონლაინ!</h1> <!--სათაური -->
+
+        <h2>გემრიელად, მარტივად, სწრაფად</h2> <!--ქვესათაური -->
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <input type="text" id="search" placeholder="შეიყვანე კერძის სახელი...">
+        <div id="no-results" style="display:none; text-align: center; color: red; font-weight: bold; margin-top: 10px;">მსგავსი კერძი ვერ მოიძებნა.</div>
+    </div>
+
+        <div class="menu">
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image8.jpg" alt="შნიცელი"> <!-- კერძის სურათი -->
+                <h3>შნიცელი</h3><!-- კერძის სახელი -->
+                <p>27.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('შნიცელი', 27.50)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image9.jpg" alt="ხაჭაპური"> <!-- კერძის სურათი -->
+                <h3>ხაჭაპური</h3> <!-- კერძის სახელი -->
+                <p>16.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ხაჭაპური', 16.50)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image10.webp" alt="ხინკალი"> <!-- კერძის სურათი -->
+                <h3>ხინკალი (10ც)</h3> <!-- კერძის სახელი -->
+                <p>15.00₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ჰამბურგერი', 15.00)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image11.jpg" alt="ცეზარის სალათი"> <!-- კერძის სურათი -->
+                <h3>ცეზარის სალათი</h3> <!-- კერძის სახელი -->
+                <p>21.20₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ცეზარის სალათი', 21.20)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image12.webp" alt="პელმენი"> <!-- კერძის სურათი -->
+                <h3>პელმენი</h3> <!-- კერძის სახელი -->
+                <p>18.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('პელმენი', 18.50)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image13.jpg" alt="ტირამისუ"> <!-- კერძის სურათი -->
+                <h3>ტირამისუ</h3> <!-- კერძის სახელი -->
+                <p>29.25₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ტირამისუ', 29.25)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image14.webp" alt="აჭარული ხაჭაპური"> <!-- კერძის სურათი -->
+                <h3>აჭარული ხაჭაპური</h3> <!-- კერძის სახელი -->
+                <p>28.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('აჭარული ხაჭაპური', 28.50)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image17.jpg" alt="შტრუდელი"> <!-- კერძის სურათი -->
+                <h3>შტრუდელი</h3> <!-- კერძის სახელი -->
+                <p>12.25₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('შტრუდელი', 12.25)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image18.jpg" alt="მილფეი"> <!-- კერძის სურათი -->
+                <h3>მილფეი</h3> <!-- კერძის სახელი -->
+                <p>28.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('მილფეი', 28.50)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image15.jpg" alt="ჩიზქეიქი"> <!-- კერძის სურათი -->
+                <h3>ჩიზქეიქი</h3> <!-- კერძის სახელი -->
+                <p>14.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ჩიზქეიქი', 14.50)">შეკვეთა</button><!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image19.webp" alt="ჩიხირთმა"> <!-- კერძის სურათი -->
+                <h3>ჩიხირთმა</h3> <!-- კერძის სახელი -->
+                <p>16.30₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ჩიხირთმა', 16.30)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image16.jpg" alt="ბრაუნი"> <!-- კერძის სურათი -->
+                <h3>ბრაუნი</h3> <!-- კერძის სახელი -->
+                <p>17.55₾</p><!-- ფასი -->
+                <button class="order-btn" onclick="order('ბრაუნი', 17.55)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image20.webp" alt="ტაკო"> <!-- კერძის სურათი -->
+                <h3>ტაკო (2ც)</h3> <!-- კერძის სახელი -->
+                <p>34.59₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ტაკო', 34.59)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image21.jpg" alt="პაელა"> <!-- კერძის სურათი -->
+                <h3>პაელა</h3> <!-- კერძის სახელი -->
+                <p>44.99₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('პაელა', 17.99)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image1.jpg" alt="ჰამბურგერი"> <!-- კერძის სურათი -->
+                <h3>ჰამბურგერი</h3> <!-- კერძის სახელი -->
+                <p>17.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ჰამბურგერი', 17.50)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image22.webp" alt="ბურიტო"> <!-- კერძის სურათი -->
+                <h3>ბურიტო</h3> <!-- კერძის სახელი -->
+                <p>12.00₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ბურიტო', 12.00)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image23.jpg" alt="ნაგეთსები და ფრი"> <!-- კერძის სურათი -->
+                <h3>ნაგეთსები და ფრი</h3> <!-- კერძის სახელი -->
+                <p>17.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ნაგეთსები და ფრი', 17.50)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image24.jpg" alt="ლაზანია"> <!-- კერძის სურათი -->
+                <h3>ლაზანია</h3> <!-- კერძის სახელი -->
+                <p>24.90₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ლაზანია', 24.90)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image2.jpg" alt="პასტა"> <!-- კერძის სურათი -->
+                <h3>პასტა კარბონარა</h3> <!-- კერძის სახელი -->
+                <p>27.30₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('პასტა', 27.30)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image3.jpg" alt="სალათი"> <!-- კერძის სურათი -->
+                <h3>ვეგანური სალათი</h3> <!-- კერძის სახელი -->
+                <p>21.49 ₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ვეგანური სალათი', 21.49)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image4.jpg" alt="რამენი"> <!-- კერძის სურათი -->
+                <h3>ცხარე რამენი</h3> <!-- კერძის სახელი -->
+                <p>20.00 ₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('ცხარე რამენი', 20.00)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image5.jpg" alt="პიცა"> <!-- კერძის სურათი -->
+                <h3>პიცა პეპერონი</h3> <!-- კერძის სახელი -->
+                <p>33.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('პიცა პეპერონი', 33.50)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image6.jpg" alt="სუში"> <!-- კერძის სურათი -->
+                <h3>სუში</h3> <!-- კერძის სახელი -->
+                <p>25.50₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('სუში', 25.50)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+            <div class="item"> <!-- კერძის ბლოკი -->
+                <img src="Images/image7.jpg" alt="კრუასანი"> <!-- კერძის სურათი -->
+                <h3>შოკოლადის კრუასანი</h3> <!-- კერძის სახელი -->
+                <p>27.30₾</p> <!-- ფასი -->
+                <button class="order-btn" onclick="order('კრუასანი', 27.30)">შეკვეთა</button> <!-- შეკვეთის ღილაკი, რომელიც იძახებს ფუნქციას order() -->
+            </div>
+
+
+    <script>
+        function order(item, price) { // ფუნქცია order, რომელიც იძახება ღილაკზე დაჭერისას
+            // მომხმარებელს ეკითხება რამდენის შეკვეთა სურს 
+            let quantity = prompt("მიუთითე, რამდენი" + " " + item + " " + "გსურს");
+            // თუ რაოდენობა სწორად არის შეყვანილი (არ არის null, არის რიცხვი და მეტია 0-ზე)
+            if (quantity !== null && !isNaN(quantity) && quantity > 0) {
+                // მთლიანი თანხის გამოთვლა
+                let total = (price * quantity).toFixed(2);
+                // შეტყობინება შეკვეთის დადასტურებისთვის
+                alert(" შენ შეუკვეთე " + quantity + " " + item + "\nთანხა: ₾ " + total);
+            } else {
+                // არასწორი რაოდენობის შემთხვევაში გაშვებული შეტყობინება
+                alert("რაოდენობა არ არის მითითებული.");
+            }
+            }
+
+
+        const searchInput = document.getElementById("search"); // ვიღებთ საძიებო ველის ელემენტს
+        const items = document.querySelectorAll(".item"); // ვიღებთ ყველა საკვებ ელემენტს item კლასით
+        const noResults = document.getElementById("no-results"); // წითელი ტექსტი "ვერ მოიძებნა" შეტყობინებისთვის
+
+        searchInput.addEventListener("input", function () {   // როცა მომხმარებელი აკრეფს ტექსტს საძიებო ველში
+        const query = searchInput.value.toLowerCase().trim();
+        let found = false;  // მოიძებნა თუ არა რაიმე
+
+        items.forEach((item) => {
+        const name = item.querySelector("h3").textContent.toLowerCase(); // თითოეული კერძის სახელი
+        // თუ კერძის სახელი შეიცავს საძიებო ველში შეყვანილ ასოს
+        if (name.includes(query)) { 
+            item.style.display = "block"; // გამოაქვს კერძი
+            found = true; //მოძებნილია
+        } else {
+            item.style.display = "none"; //არ გამოჩნდება
+        }
+        });
+
+    // თუ არ მოიძებნა შედეგი
+        noResults.style.display = found || query === "" ? "none" : "block";
+        });
+    </script>
+
+    </body>
+</html>
