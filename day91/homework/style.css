@@ -1,0 +1,104 @@
+:root {
+  --bg-page: hsl(20, 50%, 98%);
+  --card-bg: #fff;
+  --text-color: hsl(14, 65%, 9%);
+  --accent-color: hsl(14, 86%, 42%);
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  --spacing: 1.5rem;
+  --font: 'Red Hat Text', sans-serif;
+  --grid-gap: 1.5rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-page);
+  color: var(--text-color);
+}
+
+.desserts {
+  padding: calc(var(--spacing) * 2);
+}
+
+.desserts__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing);
+}
+
+.desserts__grid {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.dessert-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dessert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.dessert-card__image-wrapper {
+  position: relative;
+}
+
+.dessert-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.dessert-card__button {
+  position: absolute;
+  bottom: var(--spacing);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.6rem 1.4rem;
+  border: 2px solid var(--text-color);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dessert-card__button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.dessert-card__info {
+  padding: var(--spacing);
+}
+
+.dessert-card__category {
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+.dessert-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.dessert-card__price {
+  font-size: 1rem;
+  color: var(--accent-color);
+  margin-top: 0.25rem;
+}

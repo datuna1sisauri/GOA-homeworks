@@ -1,0 +1,154 @@
+:root {
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+  --font-family: "Barlow Semi Condensed", sans-serif;
+  --font-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--grey-100);
+  color: var(--black);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-header img.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  border: 2px solid var(--purple-300);
+}
+
+.card-header h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.card-header p {
+  font-size: 0.75rem;
+  color: var(--grey-400);
+  margin-top: 0.2rem;
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.card .quote {
+  font-weight: 500;
+  color: var(--grey-500);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Color variants */
+.purple {
+  background-color: var(--purple-500);
+  color: var(--white);
+}
+
+.purple .quote {
+  color: var(--purple-50);
+}
+
+.dark {
+  background-color: var(--grey-500);
+  color: var(--white);
+}
+
+.dark .quote {
+  color: var(--grey-200);
+}
+
+.white {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.white .quote {
+  color: var(--grey-500);
+}
+
+.blue {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.blue .quote {
+  color: var(--grey-200);
+}
+@media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "purple purple dark tall"
+      "white blue blue tall";
+  }
+
+  .purple {
+    grid-area: purple;
+  }
+  .dark {
+    grid-area: dark;
+  }
+  .white {
+    grid-area: white;
+  }
+  .blue {
+    grid-area: blue;
+  }
+  .tall {
+    grid-area: tall;
+  }
+}

@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #f9f9f9;
+  color: hsl(300, 43%, 22%);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.testimonial-section {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial-section:hover {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.testimonial-header p {
+  font-size: 1.125rem;
+  color: hsl(303, 10%, 53%);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 12px;
+  width: 30%;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: hsl(300, 43%, 22%);
+}
+
+.role {
+  font-size: 0.95rem;
+  color: hsl(303, 10%, 53%);
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: hsl(303, 10%, 53%);
+  margin-top: 15px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.rating {
+  text-align: center;
+}
+
+.rating p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(300, 43%, 22%);
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .ratings {
+    flex-direction: column;
+  }
+}
