@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Goal Orientired Academy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header1">
+            <h2 id="Welcome"></h2>
+            <a class="navigation" href="#home">დასაწყისი</a>
+            <a class="navigation" href="#martial">GOA matial arts</a>
+            <a class="navigation" href="#aboutus">ჩვენ შესახებ</a>
+            <a class="navigation" href="#contact">კავშირი</a>
+        </header>
+        
+        <section id="home" class="scroll-reveal">
+            <h1>Welcome To GOA</h1>
+            <p>მოგესალმებათ საქართველოში ყველაზე კარგი პროგრამირების აკადემია!! <br> აკადემია სადაც დაგვხვდებათ პროფესიონალი მენტორები, ასევე შეძლებთ გაიცნოთ ბევრი მიზან დასახულ მეგობარი</p>
+            <p>გაკვეთილები ტარდება ონლაინ დისქორდში. ეს კი იმას ნიშნავს რომ არ მოგიწევთ საათობით საცობში ყოფნა <br> და კომფორტულად შეძლებთ ცოდნის მიღებას სახლიდან გაუსვლელად</p>
+        </section>
+
+        <section id="martial" class="scroll-reveal">
+            <h2>GOA Martial Arts</h2>
+            <p>GOA-ს აკადემია ასევე გთავაზობთ თავის საბრძოლო ხელოვნების სკოლას. <br> სადაც შეძლებთ შეისწავლოთ MMA უმაღლეს დონეზე</p>
+            <p>სადაც ასევე გეყოლებათ უმაღლესი დონის მწვრთენელები რომლებიც მუდამ გვერდში დაგიდგებიან.</p>
+        </section>
+
+        <section id="aboutus" class="scroll-reveal">
+            <h2>GOA-ში შეძლებთ შეისწავლოთ</h2>
+            <div class="sections-row">
+                <section class="section2">
+                    <h4>პროგრამირება, კოდის წერა</h4>
+                    <p>გოაში შეძლებთ შეისწავლოთ კოდის წერა უმაღლეს დონეზე.</p>
+                </section>
+
+                <section class="section2">
+                    <h4>AI, ხელოვური ინტელექტი</h4>
+                    <p>GOA-ს აკადემია ასევე გთავაზობთ ხელოვნური ინტელექტის კურსს სადაც შეძლებთ ისწავლოთ ყველაფერი AI-ს შესახებ <br> და მომავალში შექმნათ ხელოვნური ინტელექტი</p>
+                </section>
+
+                <section class="section2">
+                    <h4>Game Development</h4>
+                    <p>გსურთ გააკეთოთ უმაღლესი დონის თამაშები?<br>GOA-ს აკადემია ასევე გდავაზობთ Game Development-ის კურსს </p>
+                </section>
+                <section class="section2">
+                    <h4>უნარები, ჩვევები</h4>
+                    <p>გარდა კოდის წერისა ჩვენთან შეიძენთ უნარებს რომლებიც გამოგადგებათ ცხოვრებაში. <br> მაგალითად: დისციპლინა, პასუხისმგელბლობა და ა.შ</p>
+                </section>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-reveal">
+            <h2>კავშირი</h2>
+            <p>შეიყვანეთ ქვემოთ მოცემული ინფრომაცია</p>
+            <form class="contact-form" onsubmit="return validateForm()">
+                <label for="name">სახელი:</label>
+                <input type="text" id="name" name="name" placeholder="შეიყვანე შენი სახელი" required>
+
+                <label for="surname">გვარი:</label>
+                <input type="text" id="surname" name="surname" placeholder="შეიყვანე შენი გვარი" required>
+
+                <label for="email">ელ-ფოსტა:</label>
+                <input type="email" id="email" name="email" placeholder="შეიყვანე შენი ელ-ფოსტა" required>
+
+                <label for="phone">ტელეფონი:</label>
+                <input type="tel" id="phone" name="phone" placeholder="შეიყვანე შენი ტელეფონი" required pattern="[0-9+ ]+">
+
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </section>
+
+
+        <footer id="footer" class="scroll-reveal">
+            <p>2025 GOA Academy</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/nika11keshelava" class="social">Facebook</a>
+                <a href="https://www.instagram.com/goal_oriented_academy__goa/" class="social">Instagram</a>
+                <a href="https://www.youtube.com/@Goal_Oriented_Academy__GOA" class="social">YouTube</a>
+            </div>
+        </footer>
+
+        <script src="indes.js"></script>
+    </body>
+</html>
