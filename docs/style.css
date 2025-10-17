@@ -237,7 +237,7 @@ body{
 }
 
 /* მობილურის სტილი */
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 
 
     body {
@@ -307,7 +307,7 @@ body{
         font-size: 1em;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     
     #header1 {
         font-size: medium;
