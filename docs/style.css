@@ -307,3 +307,18 @@ body{
         font-size: 1em;
     }
 }
+@media (max-width: 480px) {
+    
+    #header1 {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    #home h1, #martial h1, #aboutus h1, #contact h1 {
+        font-size: 1.4em;
+    }
+
+    .navigation {
+        font-size: 1em;
+    }
+}
