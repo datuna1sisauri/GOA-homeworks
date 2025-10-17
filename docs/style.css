@@ -235,3 +235,91 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+    /* General layout */
+    body {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header and navigation */
+    #header1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .navigation {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.1em;
+    }
+
+    /* Sections (Home, Martial, About, Contact) */
+    #home, #martial, #aboutus, #contact {
+        margin: 15px;
+        padding: 15px;
+        font-size: large;
+        height: auto;
+    }
+
+    /* Row layout becomes column on phones */
+    .sections-row {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .section2 {
+        flex: 1 0 100%;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Contact form should fill screen nicely */
+    .contact-form {
+        width: 90%;
+        max-width: none;
+    }
+
+    /* Footer */
+    #footer {
+        margin: 20px 10px 0 10px;
+        padding: 20px;
+        font-size: medium;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social {
+        width: 80%;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small phones */
+    #header1 {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    #home h1, #martial h1, #aboutus h1, #contact h1 {
+        font-size: 1.4em;
+    }
+
+    .navigation {
+        font-size: 1em;
+    }
+}
